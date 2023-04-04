@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import MagnifyingGlass from "./MagnifyingGlass";
 import MobileMenuItem from "./MobileMenuItem";
 import MobileMenuSocial from "./MobileMenuSocial";
+import MobileMenuExternal from "./MobileMenuExternal";
+
+import logoUrl from "../assets/logo-black.svg";
+import youtubeLogoUrl from "../assets/youtube.png";
 
 // This would come from the CMS
 const navLinks = [
@@ -95,6 +99,22 @@ const TopBar = ({ isMenuOpen }) => {
       </ul>
 
       <div className="mt-auto">
+        <div className="flex justify-between mb-2 p-2 text-black">
+          <MobileMenuExternal
+            title="Shop"
+            href="/shop"
+            imageUrl={logoUrl}
+            alt="GMBN shop"
+          />
+
+          <MobileMenuExternal
+            title="Subscribe"
+            href="www.youtube.com"
+            imageUrl={youtubeLogoUrl}
+            alt="Subscribe to our YoutTube channel"
+          />
+        </div>
+
         <MobileMenuSocial />
       </div>
     </aside>
