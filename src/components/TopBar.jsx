@@ -1,9 +1,6 @@
 import React, { useState } from "react";
-import Logo from "./Logo";
 import Hamburger from "./Hamburger";
 import logoUrl from "../assets/logo.svg";
-//import FontAwesomeIcon from "@fortawesome/react-fontawesome";
-import MagnifyingGlass from "./MagnifyingGlass";
 import MobileMenu from "./MobileMenu";
 
 const TopBar = () => {

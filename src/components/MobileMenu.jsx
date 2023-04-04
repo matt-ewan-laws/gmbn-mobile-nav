@@ -71,14 +71,14 @@ const TopBar = ({ isMenuOpen }) => {
   return (
     <aside
       className={`fixed flex flex-col text-psn-red font-bold p-2 top-0 left-0 bg-white transition-all delay-500
-                  w-full h-full pt-16
+                  w-full h-full
                          ${
                            isMenuOpen
                              ? "opacity-100"
                              : "pointer-events-none opacity-0"
                          }`}
     >
-      <div className="relative flex items-center mb-4">
+      <div className="relative flex items-center mb-8 w-[calc(100%-4rem)] ">
         <input
           type="text"
           placeholder="Search our videos"

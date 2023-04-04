@@ -5,10 +5,12 @@ const MobileMenuParent = ({ title, childrenLinks }) => {
   const [isChildrenOpen, setIsChildrenOpen] = useState(false);
 
   return (
-    <li className="mb-4">
+    <li className="pb-4 mb-4 border-b border-psn-red/10 last:border-0">
       <button
         onClick={() => setIsChildrenOpen((current) => !current)}
-        className="block flex items-center justify-between w-full text-2xl mb-1"
+        className={`block transition-all flex items-center justify-between w-full text-2xl ${
+          isChildrenOpen ? "mb-4" : ""
+        }`}
       >
         <span>{title}</span>
         <span
@@ -19,7 +21,7 @@ const MobileMenuParent = ({ title, childrenLinks }) => {
       </button>
 
       <ul
-        className={`overflow-hidden transition-all pl-2 ${
+        className={`overflow-hidden font-normal transition-all pl-2 ${
           isChildrenOpen ? "max-h-96" : "max-h-0"
         }`}
       >

@@ -1,5 +1,5 @@
 const MobileMenuLink = ({ href, title }) => (
-  <li className="text-2xl mb-4">
+  <li className="pb-4 mb-4 border-b border-psn-red/10 text-2xl last:border-none">
     <a href={href}>{title}</a>
   </li>
 );
