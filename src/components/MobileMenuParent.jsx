@@ -14,7 +14,9 @@ const MobileMenuParent = ({ title, childrenLinks }) => {
       >
         <span>{title}</span>
         <span
-          className={`w-4 transition-all ${isChildrenOpen ? "rotate-90" : ""}`}
+          className={`w-4 text-psn-red/50 transition-all ${
+            isChildrenOpen ? "rotate-90" : ""
+          }`}
         >
           <ChevronRight />
         </span>
