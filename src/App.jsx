@@ -7,7 +7,9 @@ import TopBar from "./components/TopBar";
 function App() {
   return (
     <>
-      <TopBar />
+      <div className="bg-blue-500">
+        <TopBar />
+      </div>
     </>
   );
 }
