@@ -1,14 +1,12 @@
-import { useState } from "react";
-// import reactLogo from './assets/react.svg'
-//import viteLogo from '/vite.svg'
-
 import TopBar from "./components/TopBar";
+import Content from "./components/Content";
 
 function App() {
   return (
     <>
-      <div className="bg-blue-500">
+      <div className="pt-14">
         <TopBar />
+        <Content />
       </div>
     </>
   );

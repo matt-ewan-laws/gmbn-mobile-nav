@@ -7,7 +7,7 @@ const TopBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="flex gap-2 px-2 items-center justify-between bg-psn-red py-4">
+    <nav className="flex fixed top-0 left-0 w-full gap-2 px-2 items-center justify-between bg-psn-red py-4">
       <MobileMenu isMenuOpen={isMenuOpen} />
 
       <div className="w-[98px]">
