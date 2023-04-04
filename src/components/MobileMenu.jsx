@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import MagnifyingGlass from "./MagnifyingGlass";
 import MobileMenuItem from "./MobileMenuItem";
+import MobileMenuSocial from "./MobileMenuSocial";
 
 // This would come from the CMS
 const navLinks = [
@@ -65,7 +66,7 @@ const TopBar = ({ isMenuOpen }) => {
 
   return (
     <aside
-      className={`fixed text-psn-red font-bold p-2 top-0 left-0 bg-white transition-all delay-500
+      className={`fixed flex flex-col text-psn-red font-bold p-2 top-0 left-0 bg-white transition-all delay-500
                   w-full h-full pt-16
                          ${
                            isMenuOpen
@@ -92,6 +93,10 @@ const TopBar = ({ isMenuOpen }) => {
           <MobileMenuItem {...item} />
         ))}
       </ul>
+
+      <div className="mt-auto">
+        <MobileMenuSocial />
+      </div>
     </aside>
   );
 };
