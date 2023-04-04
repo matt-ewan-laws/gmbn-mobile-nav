@@ -98,8 +98,8 @@ const TopBar = ({ isMenuOpen }) => {
         ))}
       </ul>
 
-      <div className="mt-auto">
-        <div className="flex justify-between mb-2 p-2 text-black">
+      <div className="mt-auto md:flex justify-between items-center gap-8">
+        <div className="flex gap-4 mb-2 p-2 text-black order-1">
           <MobileMenuExternal
             title="Shop"
             href="/shop"

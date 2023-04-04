@@ -23,7 +23,7 @@ const MobileMenuParent = ({ title, childrenLinks }) => {
       </button>
 
       <ul
-        className={`overflow-hidden font-normal transition-all pl-2 ${
+        className={`overflow-hidden text-black/80 font-normal transition-all pl-2 ${
           isChildrenOpen ? "max-h-96" : "max-h-0"
         }`}
       >
